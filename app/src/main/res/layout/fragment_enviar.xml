@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SheetEnviar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/botton_shet_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:fontFamily="@font/insanibu"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Enviar pedido"
+            android:textAlignment="center"
+            android:textColor="@color/corBranca"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/fecharSheet"
+            android:background="@drawable/ic_close"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/corBranca" />
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minWidth="200dp"
+            android:background="@drawable/corner_butao"
+            android:id="@+id/pedidonumero"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Pedido #1"
+            android:textAlignment="center"
+            android:textColor="@color/corIcones"
+            android:textSize="20sp" />
+
+        <TextView
+            android:textColor="@color/corBranca"
+            android:textAlignment="center"
+            android:text="Forma de pagamento"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/checkboxDin"
+                android:buttonTint="@color/corIcones"
+                android:checked="true"
+                android:text="Dinheiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/checkboxCar"
+                android:buttonTint="@color/corIcones"
+                android:text="Cartão"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:id="@+id/EditTroco"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/corBranca"
+            android:hint="Troco? Para quanto?"
+            android:padding="10dp" />
+
+        <EditText
+            android:textColorHint="@color/corIcones"
+            android:textColor="@color/corIcones"
+            android:id="@+id/EditObeserva"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/corBranca"
+            android:hint="Alguma observação? Troco?"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/BtEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/borda_butao"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:text="Enviar"
+            android:textColor="@color/corBranca"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/corBranca" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/pedidos"
+        android:icon="@drawable/ic_pedidos"
+        android:title="@string/menu_pedidos" />
+
+    <item
+        android:id="@+id/onde"
+        android:icon="@drawable/ic_local"
+        android:title="@string/menu_onde" />
+    <item
+        android:id="@+id/compartilhe"
+        android:icon="@drawable/ic_share"
+        android:title="@string/menu_compartilhar" />
+    <item
+        android:id="@+id/avaliar"
+        android:icon="@drawable/ic_star"
+        android:title="@string/menu_avaliar" />
+    <item
+        android:id="@+id/contato"
+        android:icon="@drawable/ic_contato"
+        android:title="@string/menu_contato" />
+    <item
+        android:id="@+id/tutorial"
+        android:icon="@drawable/ic_tutorial"
+        android:title="@string/menu_tutorial" />
+    <item
+        android:enabled="true"
+        android:id="@+id/appmania"
+        android:icon="@drawable/ic_appmania"
+        android:title="@string/menu_appmania" />
+</menu>

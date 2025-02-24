@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignWithParentIfMissing="false"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:id="@+id/toolbarTabmenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:subtitleTextColor="@color/corRoxoClaro"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+       >
+        <LinearLayout
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/insanibu"
+                android:text="@string/app_name"
+                android:textColor="@color/corBranca"
+                android:textSize="19sp" />
+
+            <Button
+         android:textSize="10dp"
+        android:id="@+id/BtAberto"
+        android:layout_marginLeft="15dp"
+         android:layout_marginRight="10dp"
+         android:text="Fechado"
+        android:textColor="@color/corVermelha"
+       android:background="@drawable/corner_butao"
+       android:layout_width="wrap_content"
+       android:layout_height="25dp"/></LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/toolbarTabmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarTabmenu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarTabmenu"
+        app:layout_constraintVertical_bias="0.0121"
+        app:tabBackground="@color/colorPrimaryDark"
+        app:tabIndicatorColor="@color/corVerde"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/corVerde"
+        app:tabTextColor="@color/corBranca">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/lanche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanches" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bebidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bebidas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/personalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personalizado" />
+    </com.google.android.material.tabs.TabLayout>
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/layoutbaixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        <com.andremion.counterfab.CounterFab
+            android:visibility="gone"
+            android:id="@+id/BtCarrinho"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center|bottom"
+            android:onClick="enventCarrinho"
+            app:backgroundTint="@color/corListview"
+            app:badgeBackgroundColor="@color/corVerde"
+            app:badgeTextColor="@color/corBranca"
+            app:layout_anchor="@id/layoutbaixo"
+            app:srcCompat="@drawable/ic_cart_foreground" />
+        <LinearLayout
+            android:minHeight="50dp"
+            android:id="@+id/BarraBaixo"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:paddingStart="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/borda_secundario"
+                android:paddingEnd="20dp"
+                android:id="@+id/BtVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="left|center_vertical"
+                android:drawableLeft="@drawable/ic_voltar_frag"
+                android:minWidth="150dp"
+                android:text="Voltar"
+                android:visibility="visible" />
+
+            <Space
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textColor="@color/corBranca"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/borda_butao"
+                android:paddingStart="25dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/BtFinalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center_vertical"
+                android:drawableRight="@drawable/ic_finalizar"
+                android:minWidth="150dp"
+                android:text="Adicionar"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

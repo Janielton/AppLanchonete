@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabs.TabLanches" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/LinearLista"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       ><androidx.cardview.widget.CardView
+        android:alpha="0.6"
+        android:id="@+id/loadingCard"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="80dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:id="@+id/loadingLotie"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true" /></androidx.cardview.widget.CardView>
+        <ListView
+            android:visibility="gone"
+            android:divider="@android:color/transparent"
+            android:id="@+id/listalocal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/FrameDetalheBebidas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Lanchonete</string>
+    <string name="menu_contato">Fale conosco</string>
+    <string name="menu_pedidos">Pedidos feitos</string>
+    <string name="menu_onde">Onde estamos</string>
+    <string name="menu_compartilhar">Compartilhar</string>
+    <string name="menu_avaliar">Avaliar App</string>
+    <string name="menu_tutorial">Tutorial</string>
+    <string name="menu_sair">Sair do App</string>
+    <string name="menu_appmania">por AppMania</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="open">abrir</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="close">fechar</string>
+    <string name="app_mania_resumo">Esse app foi desenvolvido pela AppMania, empresa desenvolvedora de apps para Android e Windows.</string>
+
+
+    <string-array name="cidades">
+        <item>Selecionar cidade</item>
+        <item>Carinhanha</item>
+        <item>Malhada</item>
+    </string-array>
+</resources>

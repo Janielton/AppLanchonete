@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FF7F7F</color>
+    <color name="corBranca">#FFFFFF</color>
+    <color name="corListview">#EEEEF3</color>
+    <color name="corFundo">#FAFAFA</color>
+    <color name="corBotaoSecundario">#EAE9ED</color>
+    <color name="corBotaoPrimaria">#8BC34A</color>
+    <color name="corRoxoClaro">#DBDBEA</color>
+    <color name="corVerde">#B5EA78</color>
+    <color name="corVermelha">#F87878</color>
+    <color name="corIcones">#607D8B</color>
+    <color name="corCinza">#EEEEEE</color>
+</resources>

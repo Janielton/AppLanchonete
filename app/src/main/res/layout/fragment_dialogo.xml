@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/nova_acao"
+    android:layout_margin="20dp"
+    android:minWidth="300dp"
+    android:layout_gravity="center"
+    >
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:padding="6dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <Button
+        android:layout_gravity="end"
+        android:textColor="#fff"
+        android:background="@drawable/ic_close"
+        android:id="@+id/closedialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        /></LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/produtoNovo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novo produto" >
+        <TextView
+            android:id="@+id/textprincial"
+            android:textSize="20sp"
+            android:textColor="@color/corBranca"
+            android:text="Abrimos em 0 horas"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

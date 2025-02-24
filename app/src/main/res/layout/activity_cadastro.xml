@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_min"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/insanibu"
+            android:textColor="@color/corBranca"
+            android:id="@+id/tvLegenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digite seu nome e celular"
+            android:textAlignment="center"
+            android:textSize="26sp" />
+
+        <TextView
+            android:textColor="@color/corBranca"
+            android:padding="6dp"
+            android:visibility="gone"
+            android:id="@+id/tvLegendaDois"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aguardando para detectar um SMS enviado para o numero."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/borda_butao"
+            android:padding="4dp"
+            android:text=" Alterar número "
+            android:textAllCaps="false"
+            android:textColor="@color/corBranca"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearCenter"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/corner_butao_verde"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/primeiraEtapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:minWidth="300dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <EditText
+                    android:id="@+id/edNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/corBranca"
+                    android:hint="Seu nome"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#000"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/corBranca"
+                    android:hint="Seu celular"
+                    android:inputType="phone"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+
+                <Button
+                    android:layout_marginBottom="3dp"
+                    android:minWidth="150dp"
+                    android:id="@+id/btAvancar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/borda_butao"
+                    android:text="Avançar"
+                    android:textColor="@color/corBranca" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/segundaEtapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/primeiraEtapa"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="8dp"
+
+                    android:text="Digite o código recebido"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/et_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/corBranca"
+                    android:hint="código"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:minWidth="150dp"
+                        android:id="@+id/btVerificar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/borda_butao"
+                        android:padding="4dp"
+                        android:text="Verificar"
+                        android:textColor="@color/corBranca"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/corCinza"
+        android:text="* Só é necessario informar uma vez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

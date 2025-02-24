@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/corCinza"
+    >
+
+    <LinearLayout
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center_vertical|start"
+        android:layout_gravity="center_vertical|start"
+        android:text="Pedido #3"
+        android:id="@+id/lblListHeader"
+        android:paddingLeft="30dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_gravity="end|center_vertical"
+            android:gravity="end|center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         <TextView
+             android:layout_gravity="start"
+            android:text="R$ 45,99"
+            android:id="@+id/lblValor"
+            android:textSize="16dp"
+            android:textColor="@color/corIcones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+       android:id="@+id/data"
+       android:paddingEnd="10dp"
+       android:paddingStart="10dp"
+       android:text="06/08/2020 - 30:16"
+       android:gravity="end"
+       android:layout_gravity="center_vertical|end"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

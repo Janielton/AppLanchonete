@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbarTitle"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:onClick="eventFechar"
+        android:background="@drawable/ic_voltar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:id="@+id/tvTitulo"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textSize="22dp"
+        android:fontFamily="@font/insanibu"
+        android:textColor="@color/corBranca"
+        android:text="Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</Toolbar>
